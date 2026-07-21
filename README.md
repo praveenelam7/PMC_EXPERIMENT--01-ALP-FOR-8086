@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-## Name :
-## Roll no :
-## Date of experiment :
+## Name :PRAVEEN J 
+## Roll no : 212225220073
+## Date of experiment : 20-07-2026
 
 
 
@@ -76,10 +76,52 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations (16 bit)
+```
 
+; You may customize this and other start-up templates; 
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+org 100h
+
+MOV BX,0FFFFH;
+MOV AX, 0FFFFH;
+ADD AX,BX;
+MOV [2002H],AX;
+    
+    
+    
+   
+MOV AX, 4444H;
+MOV CX, 3246H;
+SUB AX,CX;
+MOV [2002H],AX;  
+
+
+
+MOV AX,4357H;
+MOV BX,0999H;           
+MUL CX;
+MOV [2004H],AX;
+                 
+                 
+                 
+MOV AX,0005H;
+MOV BX,5000H;
+DIV BX;
+MOV [2006H],AX; 
+
+ 
+
+ret
+
+
+
+```
 
 
 ## Output  
+<img width="1680" height="996" alt="image" src="https://github.com/user-attachments/assets/867c2a56-0e99-473a-a2c5-6389df61b4a3" />
+
 
 
 
@@ -87,10 +129,39 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for logical  operations (16 bit)
 
+```
+; You may customize this and other start-up templates; 
+; The location of this template is c:\emu8086\inc\0_com_template.txt
 
+org 100h
+
+
+AND AX,BX;
+MOV [200H],AX;   
+
+
+OR AX,CX;
+MOV [2010H],AX;    
+
+
+
+NOT AX;
+MOV [2012H],AX;         
+
+
+XOR AX,BX;
+MOV [2014H],AX;
+ 
+
+ 
+
+ret
+
+```
 
 ## Output  
 
+<img width="1767" height="868" alt="image" src="https://github.com/user-attachments/assets/dd8ba3a6-877a-46ef-ad63-399e71bddfe1" />
 
 
 
